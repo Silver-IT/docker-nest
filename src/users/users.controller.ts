@@ -8,7 +8,7 @@ export class UsersController {
     ) {}
 
     @Get()
-    getUsers(): number {
+    getUsers(): Promise<number> {
       return this.usersService.getUsersCount();
     }
 }
