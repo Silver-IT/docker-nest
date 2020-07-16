@@ -6,14 +6,16 @@ import { AppService } from './app.service';
 import { UsersModule } from './users/users.module';
 
 const objMySQLConf = {
-  host: process.env.HOST || 'localhost',
+  host: process.env.MYSQL_HOST || 'localhost',
   port: parseInt(process.env.MYSQL_PORT) || 3306,
   database: process.env.MYSQL_DATABASE || 'test',
-  username: process.env.MYSQL_USERNAME || 'dev',
+  user: process.env.MYSQL_USER || 'dev',
   password: process.env.MYSQL_PASSWORD || 'Liverpool1@&',
   synchronize: true,
   entities: ['dist/**/*.entity{.ts,.js}']
 };
+
+console.log(objMySQLConf);
 
 @Module({
   imports: [
