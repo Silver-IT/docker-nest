@@ -15,6 +15,16 @@ const objMySQLConf = {
   entities: ['dist/**/*.entity{.ts,.js}']
 };
 
+// const objPostgreSQLConf = {
+//   host: process.env.POSTGRESQL_HOST || 'localhost',
+//   port: parseInt(process.env.POSTGRESQL_PORT) || 5432,
+//   database: process.env.POSTGRESQL_DATABASE || 'test',
+//   user: process.env.POSTGRESQL_USER || 'dev',
+//   password: process.env.POSTGRESQL_PASSWORD || 'Liverpool1@&',
+//   synchronize: true,
+//   entities: ['dist/**/*.entity{.ts,.js}']
+// };
+
 console.log(objMySQLConf);
 
 @Module({
